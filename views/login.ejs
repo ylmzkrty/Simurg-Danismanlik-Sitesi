@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <title>Simurg Danışmanlık</title>
+
+    <!--meta etiketleri -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Danışmanlık Web Sitesi" />
+    <meta
+      name="keywords"
+      content="Simurg Danışmanlık, Kvkk Danışmanlığı, İş Sağlığı ve Güvenliği Danışmanlığı, İnsan Kaynakları ve İş Hukuku Danışmanlığı, Güvenlik Sistemleri Danışmanlığı, Bilişim Danışmanlığı, Eğitim Danışmanlığı"
+    />
+    <meta name="author" content="Yılmaz Kurtay" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <!--Bağlantılar -->
+    <link rel="stylesheet" href="/css/login.css" />
+    <script
+      src="https://kit.fontawesome.com/90acda79f9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!--Site İconu-->
+    <link rel="shortcut icon" href="images/title.png" />
+
+    <!--Yazı Tipleri -->
+    <!--Büyük Başlıklar için -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
+    <!--İçerik Metinleri için -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
+      rel="stylesheet"
+    />
+    <!--Alt Başlıklar için -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms">
+        <div class="form login">
+          <span class="title">Giriş</span>
+          <% if (alert) { %> <%- alert %> <% } %>
+          <a href="/"><i class="fa-solid fa-house"></i></a>
+          <form action="/account/login" , method="post">
+            <div class="input-field">
+              <input
+                type="text"
+                placeholder="Mail adresinizi giriniz"
+                name="mail"
+                minlength="10"
+                required
+              />
+              <i class="uil uil-envelope icon"></i>
+            </div>
+            <div class="input-field">
+              <input
+                type="password"
+                class="password"
+                placeholder="Şifrenizi giriniz"
+                name="password"
+                minlength="5"
+                required
+              />
+              <i class="uil uil-lock icon"></i>
+              <i class="uil uil-eye-slash showHidePw"></i>
+            </div>
+
+            <div class="input-field button">
+              <input type="submit" formmethod="post" value="Giriş Yap" />
+            </div>
+          </form>
+
+          <div class="checkbox-text">
+            <div class="checkbox-content">
+              <input type="checkbox" id="logCheck" />
+              <label for="logCheck" class="text">Beni hatırla</label>
+            </div>
+
+            <a href="#" class="text">Şifremi unuttum</a>
+          </div>
+
+          <div class="login-signup">
+            <span class="text"
+              >Üye değil misiniz?
+              <a href="#" class="text signup-link">Şimdi Üye Ol</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="form signup">
+          <span class="title">Hesap Oluştur</span>
+
+          <form action="/account/create" , method="post">
+            <div class="input-field">
+              <input
+                type="text"
+                name="username"
+                placeholder="Adınızı giriniz"
+                minlength="5"
+                required
+              />
+              <i class="uil uil-user"></i>
+            </div>
+            <div class="input-field">
+              <input
+                type="text"
+                placeholder="Mail adresinizi giriniz"
+                name="mail"
+                minlength="10"
+                required
+              />
+              <i class="uil uil-envelope icon"></i>
+            </div>
+            <div class="input-field">
+              <input
+                type="password"
+                class="password"
+                placeholder="Şifrenizi oluşturun"
+                minlength="5"
+                required
+              />
+              <i class="uil uil-lock icon"></i>
+            </div>
+            <div class="input-field">
+              <input
+                type="password"
+                class="password"
+                name="password"
+                placeholder="Şifrenizi onaylayın"
+                minlength="5"
+                required
+              />
+              <i class="uil uil-lock icon"></i>
+              <i class="uil uil-eye-slash showHidePw"></i>
+            </div>
+
+            <div class="checkbox-text">
+              <div class="checkbox-content">
+                <input type="checkbox" id="sigCheck" />
+                <label for="sigCheck" class="text">Beni hatırla</label>
+              </div>
+            </div>
+
+            <div class="input-field button">
+              <input type="submit" value="Kayıt ol" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="/script/login.js"></script>
+  </body>
+</html>

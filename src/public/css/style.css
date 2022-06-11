@@ -1,0 +1,914 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Dosis', cursive;
+    font-weight: 1000;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-family:'Bungee', cursive;
+}
+h2{
+    font-family: 'Yanone Kaffeesatz', cursive;
+}
+li {
+    display: list-item;
+    list-style-type: none;
+}
+header#mainHeader{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url(../images/header.jpg);
+    /*background: linear-gradient(55deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 85%);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div#layer{
+    width: 100%;
+    height: 100%;
+    background: url(/images/pattern.png) repeat rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+div#space{
+    width: 1346px;
+    margin: auto;
+}
+div#headerContainer{
+    width: 100%;
+    height: 90vw;
+    position: relative;
+    margin: auto;
+}
+div#headerText{
+    margin-top: 35vh;
+    text-align: center;
+    color: #FBFAF5;    
+}
+div#headerText h1{
+    line-height: 14vh;
+    font-size: 40px;
+}
+div#headerText h2{
+    line-height: 0vh;
+    font-size: 30px;
+}
+div#headerButtons{
+    margin-top: 7vh;
+}
+div#headerButtons a{
+    line-height: 5vh;
+    border: 1px solid #FBFAF5;
+    display: inline-block;
+    color: #FBFAF5;
+    padding: 0 30px;
+    background:transparent;
+    border-radius: 30px;
+    transition: all .2s ease-in-out;
+}
+div#headerButtons a:hover{
+    color:#1C3851;
+    border: 1px solid #1C3851;
+    background: #FBFAF5;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);  
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+
+}
+/*------------------------------------------------------Top Buton Başlangıcı---------------------------------------------------------------------*/
+#btnTop {
+    width: 50px;
+    height: 50px;
+    background-color: #006994;
+    color: white;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #FBFAF5;
+    
+  }
+  #btnTop:hover {
+    color: #181A18;
+    background-color: #FBFAF5;
+    border: 1px solid #181A18;
+  }
+
+
+/*------------------------------------------------------------Nav Başlangıcı----------------------------------------------------------------------*/
+nav{
+    width: 100%;
+    height:13vh;
+    position: relative;
+    
+}
+div#navContainer{
+    width: 100%;
+    height: 13vh;
+    position: fixed;
+    transition: top 0.3s;
+    z-index: 99;
+    
+    /*background: linear-gradient(#1C3851 20%, #0000) !important;*/
+}
+.BgColour {
+    transition: all 1s;
+    background-color: #181A18;
+}
+div#navLogo{
+    line-height: 12vh;
+    display: inline;
+    float: left;
+    margin-left:10vh;
+    background: transparent;
+}
+div#navLogo img{
+    height: 12vh;   
+}
+ul#ulNavRight{
+    list-style-type: none;
+    float: right;
+    margin-right:10vh;
+}
+ul#ulNavRight li{
+    display: inline-block;
+    line-height: 13vh;
+}
+ul#ulNavRight li a{
+    color: #FBFAF5;
+    font-size: 17px;
+    padding-block: 20px;
+    padding-inline: 20px;
+}
+ul#ulNavRight li a:hover{
+    color: #006994;
+}
+ul#ulNavRight li a.active {
+    color: #006994;
+    box-shadow: inset 0 -2px 0 #006994;
+}
+ul#ulNavRight li a:active{
+    color:#FBFAF5;
+}
+.fa-basket-shopping{
+    color: #FBFAF5;
+    font-size: 17px;
+}
+.fa-basket-shopping:hover {
+    color: #006994;
+}
+.fa-basket-shopping:active {
+    color: #006994;
+    box-shadow: inset 0 -2px 0 #006994;
+}
+.fa-basket-shopping:active{
+    color:#FBFAF5;
+}
+.fa-user-large{
+    color: #FBFAF5;
+    font-size: 17px;
+    margin-left: 100px;
+}
+.fa-user-large:hover {
+    color: #006994;
+}
+.fa-user-large:active {
+    color: #006994;
+    box-shadow: inset 0 -2px 0 #006994;
+}
+.fa-user-large:active{
+    color:#FBFAF5;
+}
+
+/*-------------------------------------------------------Section Başlangıcı----------------------------------------------------------------------*/
+/*Section Danışmanlık Kısmı*/
+section.serviceSec{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    background: #FBFAF5;
+}
+div#serviceLayer{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+section.serviceSec h1{
+    color:#181A18;
+    display: inline-block;
+    padding-bottom: 5px;
+    box-shadow: inset 0 -2px 0 #181A18;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.column{
+    display: inline;
+    float: left;
+    width: 400px;
+}
+.column .serviceIcon{
+    margin-top: 45px;
+    float: left;
+    font-size: 50px;
+    color: #006994;
+    margin-left: 40px;
+}
+.column .info{
+    float: right;
+    text-align: left;
+    margin-top: 50px;
+    width: 270px;
+    margin-right: 15px;
+}
+.column .info h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: black;
+}
+.column .info p{
+    color: rgb(48, 48, 48);
+}
+
+/*Section Paketler*/
+section.packageSec{
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    background: url(../images/package.jpg);
+    background-attachment: fixed !important;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+section.packageSec #layer #space #text{
+    margin-top: 50px;
+}
+section.packageSec h1{
+    margin-top: 50px;
+    text-align: center;
+    color:#FBFAF5;
+    padding-bottom: 5px;
+    box-shadow: inset 0 -2px 0 #FBFAF5;
+    font-size: 30px;
+    display: inline;
+}
+section.packageSec div.packageTile{
+    position: relative;
+    float: left;
+    margin-top: 50px;
+    margin-left: 140px; 
+    overflow: hidden;
+}
+section.packageSec div.packageTile img{
+    height: 300px;
+}
+section.packageSec div.packageTile div.packageHover{
+    height: 300px;
+    width: 253px;
+    background: #006994;
+    position: absolute;
+    left:-253px;
+    transition: all 0.5s ease; 
+    border: 1px solid #f1f1f1;
+}
+section.packageSec div.packageTile:hover div.packageHover{
+    left:0px
+}
+section.packageSec div.packageTile div.packageHover div.packageText{
+    color: white;
+    line-height: 30px;
+    margin: 0;
+    text-transform: uppercase;
+}
+section.packageSec div.packageTile div.packageHover div.packageText .liTag p{
+    margin-top: 10px;
+}
+
+section.packageSec div.packageTile div.packageHover div.packageText .titleBox{
+    border-bottom: 1px solid #f1f1f1;
+    padding: 15px!important;
+}
+section.packageSec div.packageTile div.packageHover div.packageText .priceBox{
+    border-bottom: 1px solid #f1f1f1;
+}
+section.packageSec div.packageTile div.packageHover div.packageText .priceBox .price{
+   font-size: 30px;
+   font-weight: bold;
+   margin-top: 5px;
+}
+section.packageSec div.packageTile div.packageHover div.packageText .priceBox .price span{
+    font-size: 20px;
+    font-weight: bold;
+ }
+ section.packageSec div.packageTile div.packageHover div.packageText .priceBox .month{
+    text-transform: none!important;
+    color: #FBFAF5!important;
+ }
+.btnSatis a{
+    line-height:30px;
+    border: 1px solid #006994;
+    display: inline-block;
+    color: #006994;
+    padding: 0 15px;
+    background:white;
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+    
+}
+.btnSatis a:hover{
+    color:#006994;
+    border: 1px solid #006994;
+    background: #FBFAF5;
+}
+
+/*Section Referans Kısmı*/
+section.referenceSec{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    background: #FBFAF5;
+}
+section.referenceSec h1{
+    margin-top: 50px;
+    color:#181A18;
+    display: inline-block;
+    padding-bottom: 5px;
+    box-shadow: inset 0 -2px 0 #181A18;
+    font-size: 30px;
+}
+#referenceLayer{
+    overflow: hidden;
+}
+div#clients{
+    display: flex;
+    
+    animation: slide 15s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-35%);
+    }
+    75%{
+        transform: translateX(-35%);
+    }
+}
+div#item{
+    margin-left: 70px;
+    margin-top: 50px;
+}
+div#item img{
+    height: 130px;
+    opacity: 50%;
+}
+div#item img:hover{
+    opacity: 100%;
+}
+  
+/*Section Hakkımda*/
+section.aboutSec{
+    width: 100%;
+    height: 65vh;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    background: url(../images/about.jpg);
+    background-attachment: fixed !important;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+section.aboutSec #text{
+    margin-top: 50px;
+}
+section.aboutSec h1{
+    text-align: center;
+    color:#FBFAF5;
+    padding-bottom: 5px;
+    box-shadow: inset 0 -2px 0 #FBFAF5;
+    font-size: 30px;
+    display: inline;
+}
+.profileContainer {
+    position: relative;
+    border: 0;
+    transition: all .2s ease-in-out;
+    display: inline;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+  .image {
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: #FBFAF5;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+  .profileContainer:hover .overlay {
+    opacity: 1;
+  }
+  .icon {
+    color: #006994;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .fa-user:hover {
+    color: #181A18;
+  }
+  section.aboutSec article{
+    margin-top: 50px;
+    margin-right: 50px;
+    display: inline;
+    float: right;
+    width: 900px;
+  }
+  section.aboutSec article p{
+    font-size: 20px;
+    text-align: left;
+    color: white;
+  }
+
+  /*Section Yapılanlar*/
+  section.tryitSec{
+    width: 100%;
+    height: 115vh;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    background: #FBFAF5;
+}
+div#tryitLayer{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #006994;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #006994;
+    border: 4px solid #181A18;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .left {
+    left: 0;
+  }
+  .right {
+    left: 50%;
+  }
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #006994;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #006994;
+  }
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #006994;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #006994 transparent transparent;
+  }
+  .right::after {
+    left: -16px;
+  }
+  .content {
+    padding: 20px 30px;
+    background-color: #006994;
+    position: relative;
+    border-radius: 6px;
+    color: #FBFAF5;
+  }
+
+  /*Section İletişim*/
+  section.contactSec{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    background: url(/images/iletisim.jpg);
+    background-attachment: fixed !important;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+section.contactSec #text{
+    margin-top: 50px;
+}
+section.contactSec h1{
+    text-align: center;
+    color:#FBFAF5;
+    padding-bottom: 5px;
+    box-shadow: inset 0 -2px 0 #FBFAF5;
+    font-size: 30px;
+    display: inline;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=submit] {
+    background-color: #006994;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #1C3851;
+  }
+  .contactContainer {
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+/*-------------------------------------------------------footer Başlangıcı-----------------------------------------------------------------------*/
+    footer{
+    width: 100%;
+    height: 17vh;
+    position: relative;
+    background: #181A18;
+    }
+    .copyright{
+        margin-left: 100px;
+        float:left;
+        font-size: 20px;
+        color: #FBFAF5;
+    }
+    .copyright a{
+        color: #006994;
+    }
+    .footerOverlay{
+        display: inline;
+        float: right;
+        margin-right: 100px;
+    }
+    .footerIcon{
+        color: #FBFAF5;
+        font-size: 30px;
+        position: relative;
+        margin-left: 30px;
+    }
+    .footerIcon:hover{
+        color:#006994;
+    }
+    .footerRow{
+        margin-top: 50px;
+    }
+    .fa-facebook-f:hover{
+        color: #4267B2;
+    }
+    .fa-twitter:hover{
+        color: #1DA1F2;
+    }
+    .fa-google-plus-g:hover{
+        color: #db4437;
+    }
+    .fa-instagram:hover{
+        color: #8a3ab9;
+    }
+
+/*----------------------------------------------------Diğer html kısımlarının Header kısımları----------------------------------------------------*/
+    header#secondHeader{
+        width: 100%;
+        height: 60vh;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #secondHeaderContainer{
+        width: 100%;
+        height: 90vw;
+        position: relative;
+        margin: auto;
+    }
+    #secondHeaderText{
+        margin-top: 25vh;
+        text-align: center;
+        color: #FBFAF5;   
+        
+        font-size: 30px;
+    }
+    ul#connection{
+        text-align: center;
+    }
+    ul#connection li{
+        display: inline-block;
+    }
+    ul#connection li a{
+        color: #FBFAF5;
+        font-size: 20px;
+        padding-block: 20px;
+        padding-inline: 20px;
+    }
+
+    /*iletisim.html*/
+    #iletisimSec{
+        width: 100%;
+        height: 80vh;
+        background: #FBFAF5;
+        text-align: center;
+        justify-content:center;
+    }
+    #iletisimContainer{
+        margin:auto ;
+        display: flex;
+        width: 800px;
+        color: #181A18;
+        margin-left: 250px;
+    }
+    #iletisimLayer{
+        display: flex;
+        margin-top:150px ;
+    }
+    .colum:last-child{
+        border-right: 0;
+    }
+   
+    #iletisimContainer a{
+        color: #181A18;
+    }
+    #iletisimContainer p{
+        margin-top: 15px;
+        font-weight: lighter;
+    }
+    .colum{
+        height: 350px;
+        width: 270px;
+        border-right: 1px solid gray;
+    }
+    .iletisimIcon{
+        color: #006994;
+        font-size: 50px;
+        margin-top: 50px;
+    }
+    .iletisimText span{
+        font-size: 25px;
+        font-weight: bold;
+        border-bottom: 1px solid gray;
+
+    }
+
+    /*reference.html*/
+    #referenceSec{
+        width: 100%;
+        height: 190vh;
+        position: relative;
+        margin: auto;
+        text-align: center;
+        background: #FBFAF5;
+    }
+ 
+    .referenceColumn{
+        display: inline;
+        float: left;
+        width: 200;
+        margin-top: 60px;
+        margin-left: 60px;
+    }
+    
+    .referenceImage{
+        float: left;
+        border: 1px solid #006994;
+        margin-top: 50px;
+        margin-left: 50px;
+        height: 200px;
+        width: 210px;
+        background: transparent;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+
+    .referenceImage img{
+        height: 150px;
+        margin-bottom: 10px;
+        border-right: 1px solid #006994;
+        border-left: 1px solid #006994;
+        border-bottom: 1px solid #006994;
+        background: transparent;
+        
+    }
+    .referenceImage:hover{
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);  
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);  
+    } 
+    .referenceText h2{
+        text-transform: uppercase;
+        font-size: 20px;
+        color: black;
+    }
+
+    /*service.html*/
+    section.servisSec{
+        width: 100%;
+        height: 240vh;
+        position: relative;
+        margin: auto;
+        text-align: center;
+        background: #FBFAF5;
+    }
+    div#servisLayer{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .servisColumn{
+        display: inline;
+        float: left;
+        width: 1200px;
+        margin-top: 50px;
+        border-bottom: 1px solid gray;
+    }
+    .servisColumn:last-child{
+        border-bottom: 0;
+    }
+    .servisColumn .servisIcon{
+        
+        float: left;
+        font-size: 80px;
+        color: #006994;
+        margin-left: 40px;
+        width: 300px;
+        border-right: 1px solid gray;
+        margin-bottom: 30px;
+    }
+    .servisColumn .servisInfo{
+        float: right;
+        text-align: left;
+        margin-top: 50px;
+        width: 800px;
+        margin-right: 15px;
+    }
+    .servisColumn .servisIcon h2{
+        text-transform: uppercase;
+        font-size: 25px;
+        margin-bottom: 10px;
+        color: #006994;
+    }
+    .servisColumn .servisInfo p{
+        font-size:17px ;
+        color: rgb(48, 48, 48);
+    }
+
+    /*about.html*/
+    section.hakkimizdaSec{
+        width: 100%;
+        height: 170vh;
+        position: relative;
+        margin: auto;
+        background: #FBFAF5;
+    }
+    section.hakkimizdaSec h1{
+        color:#006994;
+        display: inline-block;
+        padding-bottom: 5px;
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    .hakkimizdaContainer{
+        display: inline;
+        float: left;
+        width: 1200px;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    .hakkimizdaText{
+        width: 700px;
+        border-bottom: 1px solid gray;
+        padding-bottom: 90px;
+    }
+
+    .hakkimizdaText li:before{
+        content: "•";
+        margin-right: 5px;
+        color: black;
+        font-size: 20px;
+    }
+
+    .hakkimizdaText:last-child{
+        border-bottom: 0;
+       
+    }
+    .videoContainer{
+        display: inline;
+        float: right;
+        width: 400px;
+        margin-top: 70px;
+        
+    }
+  
+  
+  
+    
+
+   
+    
+
+
+
+
+
+
+
+
+
+

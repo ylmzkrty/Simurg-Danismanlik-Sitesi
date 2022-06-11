@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Simurg Danışmanlık</title>
+
+    <!--meta etiketleri -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Danışmanlık Web Sitesi">
+    <meta name="keywords" content="Simurg Danışmanlık, Kvkk Danışmanlığı, İş Sağlığı ve Güvenliği Danışmanlığı, İnsan Kaynakları ve İş Hukuku Danışmanlığı, Güvenlik Sistemleri Danışmanlığı, Bilişim Danışmanlığı, Eğitim Danışmanlığı"> 
+    <meta name="author" content="Yılmaz Kurtay">
+    
+    <!--Bağlantılar -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/90acda79f9.js" crossorigin="anonymous"></script>
+    
+    <!--Site İconu-->
+    <link rel="shortcut icon" href="images/title.png">
+
+    <!--Yazı Tipleri -->
+    <!--Büyük Başlıklar için -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <!--İçerik Metinleri için -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <!--Alt Başlıklar için -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
+    <!--------------------------------------------------------header başlangıcı------------------------------------------------------------------->
+    <header id="secondHeader" style="background-image: url(/images/about.jpg);">
+        <div id="layer">
+            <div id="seconHeaderContainer"></div>
+            <div id="secondHeaderText"> 
+                <h2>HAKKINDA</h2>
+                <ul id="connection">
+                    <li><a href="/">Ana Sayfa</a><span>></span></li>
+                    <li><a href="hakkinda">Hakkında</a><span>></span></li>
+                </ul>
+            </div>
+        </div>
+
+    <!-----------------------------------------------------------Nav başlangıcı------------------------------------------------------------------->
+        <nav>
+            <div id="navContainer">
+                <div id="navLogo">
+                    <a href="/">
+                        <img src="/images/logo.png" alt="logo" />
+                    </a>
+                </div>
+                <ul id="ulNavRight">
+                    <li><a href="/">Ana Sayfa</a></li>
+                    <li><a class="active" href="hakkinda">Hakkında</a></li>
+                    <li><a href="danismanlik">Danışmanlık</a></li>
+                    <li><a href="referanslar">Referanslar</a></li>
+                    <li><a href="iletisim">İletişim</a></li>
+                    <% if (!user) { %>
+                        <li><a href="login"><i class="fa-solid fa-user-large"></i></a></li>
+                        <% } %>                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-------------------------------------------------------Top Butonu başlangıcı------------------------------------------------------------------->
+    <button onclick="topFunction()" id="btnTop" title="Yukarıya Çık"><i class="fa-solid fa-angle-up"></i></button>
+    <!---------------------------------------------------------Section Başlangıcı--------------------------------------------------------------------->
+    <section class="hakkimizdaSec">
+            <div class="hakkimizdaContainer">
+                <div class="textContainer">
+                    <div class="videoContainer">
+                        <video width="600" height="350" controls="controls">
+                            <source src="video.mp4" type="video/mp4" />
+                            <source src="video.ogg" type="video/ogg" />
+                            Tarayıcınız video etiketini desteklemiyor.
+                        </video>
+                    </div>
+                    <div class="hakkimizdaText">
+                        <h1>HAKKIMIZDA</h1>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    </div>
+                    
+                    <div class="hakkimizdaText">
+                        <h1>MİSYONUMUZ</h1>
+                        <p>Hizmet sunduğumuz sektörlerde hukuka, etik ilkelere bağlı en ideal çözümleri üretmek ve sunmak.</p>
+                    </div>
+                    <div class="hakkimizdaText">
+                        <h1>VİZYONUMUZ</h1>
+                        <p>İş yerlerinin ihtiyacı olan tüm alanlarda tek merkezden zamana uygun, özgün çözümler üretmek ve alanında lider bir firma olmak.</p>                
+                    </div>
+                    <div class="hakkimizdaText">
+                        <h1>DEĞERLERİMİZ</h1>
+                        <ul>
+                            <li>Müşteri memnuniyeti</li>
+                            <li>Müşteri memnuniyeti</li>
+                            <li>Müşteri memnuniyeti</li>
+                            <li>Müşteri memnuniyeti</li>
+                            <li>Müşteri memnuniyeti</li>
+                            <li>Müşteri memnuniyeti</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        
+    </section>
+
+    <!---------------------------------------------------------Footer başlangıcı------------------------------------------------------------------->
+    <footer>
+        <div class="footerContainer">
+            <div id="layer">
+                <div class="footerRow">
+                    <div class="copyright">
+                        <p>2021 © Simurg Danışmanlık Created By <a href="#yapimci">Erdoğan Yerli</a></p>
+                    </div>
+                    <div class="footerOverlay">
+                        <a href="hakkinda" class="footerIcon" title="">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="hakkinda" class="footerIcon" title="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="hakkinda" class="footerIcon" title="">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                        <a href="hakkinda" class="footerIcon" title="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </div> 
+    </footer>
+</body>
+<!---------------------------------------------------------Footer başlangıcı------------------------------------------------------------------->
+    <!--navbar renk değiştirme-->
+    <script>
+        function scrollValue() {
+    var navContainer = document.getElementById('navContainer');
+    var scroll = window.scrollY;
+    if (scroll < 350) {
+        navContainer.classList.remove('BgColour');
+    } else {
+        navContainer.classList.add('BgColour');
+    }
+    }   
+    window.addEventListener('scroll', scrollValue);
+    </script>
+
+    <!--script bağlantıları-->
+    <script src="/js/js.js"></script>
+</html>

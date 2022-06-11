@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Simurg Danışmanlık</title>
+
+    <!--meta etiketleri -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Danışmanlık Web Sitesi">
+    <meta name="keywords" content="Simurg Danışmanlık, Kvkk Danışmanlığı, İş Sağlığı ve Güvenliği Danışmanlığı, İnsan Kaynakları ve İş Hukuku Danışmanlığı, Güvenlik Sistemleri Danışmanlığı, Bilişim Danışmanlığı, Eğitim Danışmanlığı"> 
+    <meta name="author" content="Yılmaz Kurtays">
+    
+    <!--Bağlantılar -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/90acda79f9.js" crossorigin="anonymous"></script>
+    
+    <!--Site İconu-->
+    <link rel="shortcut icon" href="/images/title.png">
+
+    <!--Yazı Tipleri -->
+    <!--Büyük Başlıklar için -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <!--İçerik Metinleri için -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <!--Alt Başlıklar için -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
+    <!--------------------------------------------------------header başlangıcı------------------------------------------------------------------->
+    <header id="secondHeader" style="background-image: url(/images/reference.jpg);">
+        <div id="layer">
+            <div id="seconHeaderContainer"></div>
+            <div id="secondHeaderText"> 
+                <h2>REFERANSLAR</h2>
+                <ul id="connection">
+                    <li><a href="/">Ana Sayfa</a><span>></span></li>
+                    <li><a href="referanslar">Referanslar</a><span>></span></li>
+                </ul>
+            </div>
+        </div>
+    <!-----------------------------------------------------------Nav başlangıcı------------------------------------------------------------------->
+        <nav>
+            <div id="navContainer">
+                <div id="navLogo">
+                    <a href="/">
+                        <img src="/images/logo.png" alt="logo" />
+                    </a>
+                </div>
+                <ul id="ulNavRight">
+                    <li><a href="/">Ana Sayfa</a></li>
+                    <li><a href="hakkinda">Hakkında</a></li>
+                    <li><a href="danismanlik">Danışmanlık</a></li>
+                    <li><a class="active"  href="referanslar">Referanslar</a></li>
+                    <li><a href="iletisim">İletişim</a></li>
+                    <% if (!user) { %>
+                        <li><a href="login"><i class="fa-solid fa-user-large"></i></a></li>
+                        <% } %>                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-------------------------------------------------------Top Butonu başlangıcı------------------------------------------------------------------->
+    <button onclick="topFunction()" id="btnTop" title="Yukarıya Çık"><i class="fa-solid fa-angle-up"></i></button>
+    
+    
+    <!--------------------------------------------------------------Section------------------------------------------------------------------------>
+    <section id="referenceSec">
+        <div id="referenceContainer">
+            <div class="referenceLayer">
+                <div class="referenceColumn">
+                    <div class="referenceImage">
+                        <img src="/images/referans/sevinc.jpg" alt="">
+                        <h2>Seviç Orman Ürünleri</h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/sedef.jpg" alt="">
+                        <h2>Sedef Pastaneleri</h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/özbag.jpg" alt="">
+                        <h2>Özbağ Kuyumculuk</h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/ncrea.jpg" alt="">
+                        <h2>N'Crea Home</h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/nell.jpg" alt="">
+                        <h2>Nell Mobilya</h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/murat.jpg" alt="">
+                        <h2>Murat Ticaret</h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/model.jpg" alt="">
+                        <h2>Model Tasarım</h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/modef.jpg" alt="">
+                        <h2>Modef</h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/mobiliyum.jpg" alt="">
+                        <h2>Mobiliyum Avm</h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/mespa.jpg" alt="">
+                        <h2>Meşpa Ambalaj</h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/kubilay.jpg" alt="">
+                        <h2>Kubilay Boya</h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/kırcalı.jpg" alt="">
+                        <h2>Kırcalı Yapı</h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/kircaliins.jpg" alt="">
+                        <h2>kırcalı İnşaat</h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/inkutsan.jpg" alt="">
+                        <h2>İnkutsan</h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/homage.jpg" alt="">
+                        <h2>Homage</h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/gencecix.jpg" alt="">
+                        <h2>Gencecix Kids</h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/didvani.jpg" alt="">
+                        <h2>Didvani</h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/bella.jpg" alt="">
+                        <h2>Bella Casa</h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/baykan.jpg" alt="">
+                        <h2>Baykan Metal</h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/bala.jpg" alt="">
+                        <h2>Bala Makine</h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/argelas.jpg" alt="">
+                        <h2>Argelas Otomativ</h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/area.jpg" alt="">
+                        <h2>Area Mobilya </h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/anil.jpg" alt="">
+                        <h2>Anıl Orman Ürünleri</h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/altay.jpg" alt="">
+                        <h2>Altay İklimlendirme</h2>
+                    </div>
+                    <div class="referenceImage">
+                        <img src="/images/referans/allegro.jpg" alt="">
+                        <h2>Allegro Home</h2>
+                    </div>
+                    
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------------------------Footer başlangıcı------------------------------------------------------------------->
+    <footer>
+        <div class="footerContainer">
+            <div id="layer">
+                <div class="footerRow">
+                    <div class="copyright">
+                        <p>2021 © Simurg Danışmanlık Created By <a href="#yapimci">Erdoğan Yerli</a></p>
+                    </div>
+                    <div class="footerOverlay">
+                        <a href="hakkinda" class="footerIcon" title="">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="hakkinda" class="footerIcon" title="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="hakkinda" class="footerIcon" title="">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                        <a href="hakkinda" class="footerIcon" title="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </div> 
+    </footer>
+</body>
+    <!---------------------------------------------------------Footer başlangıcı------------------------------------------------------------------->
+    <!--navbar renk değiştirme-->
+    <script>
+        function scrollValue() {
+    var navContainer = document.getElementById('navContainer');
+    var scroll = window.scrollY;
+    if (scroll < 350) {
+        navContainer.classList.remove('BgColour');
+    } else {
+        navContainer.classList.add('BgColour');
+    }
+    }   
+    window.addEventListener('scroll', scrollValue);
+    </script>
+
+    <!--script bağlantıları-->
+    <script src="/js/js.js"></script>
+</html>

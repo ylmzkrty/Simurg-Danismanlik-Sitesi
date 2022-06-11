@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+    <html lang="tr">
+    <head>
+        <title>Simurg Danışmanlık</title>
+    
+        <!--meta etiketleri -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Danışmanlık Web Sitesi">
+        <meta name="keywords" content="Simurg Danışmanlık, Kvkk Danışmanlığı, İş Sağlığı ve Güvenliği Danışmanlığı, İnsan Kaynakları ve İş Hukuku Danışmanlığı, Güvenlik Sistemleri Danışmanlığı, Bilişim Danışmanlığı, Eğitim Danışmanlığı"> 
+        <meta name="author" content="Yılmaz Kurtay">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <!--Bağlantılar -->
+        <link rel="stylesheet" href="css/odeme.css">
+        <script src="https://kit.fontawesome.com/90acda79f9.js" crossorigin="anonymous"></script>
+        <linkrel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
+        <script src="JS/jquery-3.5.1.min.js"></script>
+        <script src="JS/multislider.min.js"></script>
+        
+        <!--Site İconu-->
+        <link rel="shortcut icon" href="images/title.png">
+    
+        <!--Yazı Tipleri -->
+        <!--Büyük Başlıklar için -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+        <!--İçerik Metinleri için -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+        <!--Alt Başlıklar için -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    
+    
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card-container">
+
+        <div class="front">
+            <div class="image">
+                <img src="image/chip.png" alt="">
+                <img src="image/visa.png" alt="">
+            </div>
+            <div class="card-number-box">################</div>
+            <div class="flexbox">
+                <div class="box">
+                    <span>Kart Sahibi</span>
+                    <div class="card-holder-name">Ad Soyad</div>
+                </div>
+                <div class="box">
+                    <span>Son Kullanma Tarihi</span>
+                    <div class="expiration">
+                        <span class="exp-month">AY</span>
+                        <span class="exp-year">YIL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="back">
+            <div class="stripe"></div>
+            <div class="box">
+                <span>cvv</span>
+                <div class="cvv-box"></div>
+                <img src="image/visa.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <form action="/api/odeme" , method="post">
+
+        <% if (alert) { %>
+            <p><%= alert %> <br><a href="/"> Ana Sayfa</a></p>
+            <% } %>
+
+        <% if (paket) { %>
+
+        <div class="inputBox">
+            <span>Paket Türü</span>
+            <input type="text" name="paket" value="<%= paket %>" readonly>
+        </div>
+
+        <% } %>
+
+        <div class="inputBox">
+            <span>Kart Numarası</span>
+            <input type="text" maxlength="16" class="card-number-input", name="card-number">
+        </div>
+        <div class="inputBox">
+            <span>Kart Sahibi</span>
+            <input type="text" class="card-holder-input">
+        </div>
+        <div class="flexbox">
+            <div class="inputBox">
+                <span>Ay</span>
+                <select name="mounth" id="" class="month-input">
+                    <option value="month" selected disabled>Ay</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            <div class="inputBox">
+                <span>Yıl</span>
+                <select name="year" id="" class="year-input">
+                    <option value="year" selected disabled>Yıl</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                </select>
+            </div>
+            <div class="inputBox">
+                <span>cvv</span>
+                <input type="text" maxlength="4" class="cvv-input", name="cvv">
+            </div>
+        </div>
+        <input type="submit" value="Onayla" class="submit-btn">
+    </form>
+
+</div>    
+    
+
+
+
+
+
+<script>
+
+document.querySelector('.card-number-input').oninput = () =>{
+    document.querySelector('.card-number-box').innerText = document.querySelector('.card-number-input').value;
+}
+
+document.querySelector('.card-holder-input').oninput = () =>{
+    document.querySelector('.card-holder-name').innerText = document.querySelector('.card-holder-input').value;
+}
+
+document.querySelector('.month-input').oninput = () =>{
+    document.querySelector('.exp-month').innerText = document.querySelector('.month-input').value;
+}
+
+document.querySelector('.year-input').oninput = () =>{
+    document.querySelector('.exp-year').innerText = document.querySelector('.year-input').value;
+}
+
+document.querySelector('.cvv-input').onmouseenter = () =>{
+    document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(-180deg)';
+    document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(0deg)';
+}
+
+document.querySelector('.cvv-input').onmouseleave = () =>{
+    document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(0deg)';
+    document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(180deg)';
+}
+
+document.querySelector('.cvv-input').oninput = () =>{
+    document.querySelector('.cvv-box').innerText = document.querySelector('.cvv-input').value;
+}
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

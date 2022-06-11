@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Simurg Danışmanlık</title>
+
+    <!--meta etiketleri -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Danışmanlık Web Sitesi">
+    <meta name="keywords" content="Simurg Danışmanlık, Kvkk Danışmanlığı, İş Sağlığı ve Güvenliği Danışmanlığı, İnsan Kaynakları ve İş Hukuku Danışmanlığı, Güvenlik Sistemleri Danışmanlığı, Bilişim Danışmanlığı, Eğitim Danışmanlığı"> 
+    <meta name="author" content="Yılmaz Kurtay">
+    
+    <!--Bağlantılar -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/90acda79f9.js" crossorigin="anonymous"></script>
+    
+    <!--Site İconu-->
+    <link rel="shortcut icon" href="images/title.png">
+
+    <!--Yazı Tipleri -->
+    <!--Büyük Başlıklar için -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <!--İçerik Metinleri için -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <!--Alt Başlıklar için -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
+    <!--------------------------------------------------------header başlangıcı------------------------------------------------------------------->
+    <header id="secondHeader" style="background-image: url(/images/about2.jpg);">
+        <div id="layer">
+            <div id="seconHeaderContainer"></div>
+            <div id="secondHeaderText"> 
+                <h2>DANIŞMALIK</h2>
+                <ul id="connection">
+                    <li><a href="/">Ana Sayfa</a><span>></span></li>
+                    <li><a href="danismanlik">Danışmanlık</a><span>></span></li>
+                </ul>
+            </div>
+        </div>
+    <!-----------------------------------------------------------Nav başlangıcı------------------------------------------------------------------->
+        <nav>
+            <div id="navContainer">
+                <div id="navLogo">
+                    <a href="/">
+                        <img src="/images/logo.png" alt="logo" />
+                    </a>
+                </div>
+                <ul id="ulNavRight">
+                    <li><a href="/">Ana Sayfa</a></li>
+                    <li><a href="hakkinda">Hakkında</a></li>
+                    <li><a class="active" href="danismanlik">Danışmanlık</a></li>
+                    <li><a href="referanslar">Referanslar</a></li>
+                    <li><a href="iletisim">İletişim</a></li>
+                    
+                    <% if (!user) { %>
+                        <li><a href="login"><i class="fa-solid fa-user-large"></i></a></li>
+                        <% } %>
+
+                   
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-------------------------------------------------------Top Butonu başlangıcı------------------------------------------------------------------->
+    <button onclick="topFunction()" id="btnTop" title="Yukarıya Çık"><i class="fa-solid fa-angle-up"></i></button>
+    
+    <!----------------------------------------------------------Section Başlangıcı-------------------------------------------------------------------->
+    <section class="servisSec">
+        <div id="servisLayer">
+            <div class="row">
+                <div class="servisColumn">
+                    <div class="servisIcon">
+                        <i class="fa-solid fa-book"></i>
+                        <h2>Eğitim Danışmanlığı</h2>
+                    </div>
+                    <div class="servisInfo">
+                        <p>İş sağlığı ve güvenliği alanındaki özelleştirilmiş eğitimler, yüksekte çalışma, yangın, deprem, iş hukuku, insan kaynakları, veri güvenliği, bilgi güvenliği, KVKK(Kişisel Verilerin Korunması Kanunu), YORA(Yapısal Olmasyan Risklerin Azaltılması) eğitimlerini ve iş dünyasının ihtiyaç duyduğu alanlardaki eğitimleri vermekteyiz.</p>
+                    </div>
+                </div>
+                <div class="servisColumn">
+                    <div class="servisIcon">
+                        <i class="fa-solid fa-helmet-safety"></i>
+                        <h2>İş Sağlığı &amp; Güvenliği</h2>
+                    </div>
+                    <div class="servisInfo">
+                        <p>Öncelikle belirtmek isteriz ki bu hizmetimiz bir osgb ya da bireysel işyeri hekimliği, iş güvenliği uzmanlığı hizmeti değildir. Bu hizmetimiz ile, isg konularında ihtiyaç olan her türden sorunu çözüme kavuşturma konusunda rehberlik yapmaktayız. Aynı zamanda işyerinde mevcut durum analizi yapıp en güncel mevzuata uygunluk tespiti yapmaktayız. Ayrıca bu alanda dosyalama, saha yönetimi, makine-ekipman, eğitimler konusunda rehberlik yapmaktayız.</p>
+                    </div>
+                </div>
+                <div class="servisColumn">
+                    <div class="servisIcon">
+                        <i class="fa-solid fa-tower-cell"></i>
+                        <h2>Haberleşme Sistemleri Danışmanlığı</h2>
+                    </div>
+                    <div class="servisInfo">
+                        <p>Telefon santralleri, voip hizmetleri ve numara taşıma hizmetleri vermekteyiz.</p>
+                    </div>
+                </div>
+                <div class="servisColumn">
+                    <div class="servisIcon">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h2>İnsan Kaynakları &amp; İş Hukuku Danışmanlığı</h2>
+                    </div>
+                    <div class="servisInfo">
+                        <p>İşyerlerinin iş hukuku ve insan kaynakları alanındaki ihtiyaçlarını, yasalara ve işyerine uygun olarak çözüme kavuşturmaktayız. Sözleşmelerden işten ayrılışa kadar tüm alanlardaki süreçlerin doğru ve eksiksiz yerine getirilmesinde rehberlik yapıyoruz.</p>
+                    </div>
+                </div>
+                <div class="servisColumn">
+                    <div class="servisIcon">
+                        <i class="fa-solid fa-house-lock"></i>
+                        <h2>Güvenlik Sistemleri Danışmanlığı</h2>
+                    </div>
+                    <div class="servisInfo">
+                        <p>İş yerleri için ideal güvenlik sistemlerinin çözüm ve tasarımı, kimlik doğrulama sistemleri, yangın güvenliği, kamera kayıt sistemleri, hırsız güvenliği vb. konularda hizmet vermekteyiz.</p>
+                    </div>
+                </div>
+                <div class="servisColumn">
+                    <div class="servisIcon">
+                        <i class="fa-solid fa-shield"></i>
+                        <h2>KVKK &amp;Bilgi Güvenliği Danışmanlığı </h2>
+                    </div>
+                    <div class="servisInfo">
+                        <p>Kişisel verilerin korunması kanununun tüm gereklerini sağlamaktayız, bu alanda işyerleri için zorunlu olan idari, hukuki ve teknik düzenlemeler konusunda işyerlerinin ilgili ihtiyaçlarını, işyerlerine özgü bir şekilde çözüme kavultırmaktayız</p>
+                    </div>
+                </div>
+                <div class="servisColumn">
+                    <div class="servisIcon">
+                        <i class="fa-solid fa-microchip"></i>
+                        <h2>Bilişim Danışmanlığı</h2>
+                    </div>
+                    <div class="servisInfo">
+                        <p>Yazılım, donanım, ağ, bulut, server, kamera, yangın güvenlik sistemleri ve çözümleri.</p>
+                    </div>
+                </div>
+                <div class="servisColumn">
+                    <div class="servisIcon">
+                        <i class="fa-solid fa-handshake-simple-slash"></i>
+                        <h2>Aracılık Hizmetleri</h2>
+                    </div>
+                    <div class="servisInfo">
+                        <p>Çözüm ortaklarımız ile iş yerinizde ihtiyaç duyduğunuz tasarım, kontrol, test, eğitim, tamir, bakım, malzeme temini vb. konularda tek merkezden hizmet vermekteyiz.</p>
+                    </div>
+                </div>
+                
+                                                                                     
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------------------------Footer başlangıcı------------------------------------------------------------------->
+    <footer>
+        <div class="footerContainer">
+            <div id="layer">
+                <div class="footerRow">
+                    <div class="copyright">
+                        <p>2021 © Simurg Danışmanlık Created By <a href="#yapimci">Erdoğan Yerli</a></p>
+                    </div>
+                    <div class="footerOverlay">
+                        <a href="hakkinda" class="footerIcon" title="">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="hakkinda" class="footerIcon" title="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="hakkinda" class="footerIcon" title="">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                        <a href="hakkinda" class="footerIcon" title="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </div> 
+    </footer>
+</body>
+    <!---------------------------------------------------------Footer başlangıcı------------------------------------------------------------------->
+    <!--navbar renk değiştirme-->
+    <script>
+        function scrollValue() {
+    var navContainer = document.getElementById('navContainer');
+    var scroll = window.scrollY;
+    if (scroll < 350) {
+        navContainer.classList.remove('BgColour');
+    } else {
+        navContainer.classList.add('BgColour');
+    }
+    }   
+    window.addEventListener('scroll', scrollValue);
+    </script>
+
+    <!--script bağlantıları-->
+    <script src="/js/js.js"></script>
+</html>
